@@ -14,6 +14,8 @@ function Address (street, city, state) {
   this.state = state;
 }
 
+
+
 $(document).ready(function() {
   $("form#new-contact").submit(function(event) {
     event.preventDefault();
