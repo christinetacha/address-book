@@ -14,7 +14,9 @@ function Address (street, city, state) {
   this.state = state;
 }
 
-
+Address.prototype.fullAddress = function() {
+  return this.street + ", " + this.city + ", " + this.state;
+}
 
 $(document).ready(function() {
   $("form#new-contact").submit(function(event) {
